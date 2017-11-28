@@ -1,0 +1,9 @@
+<form>
+    <div class="form-group">
+        <label for="inputSentence">Input Sentence</label>
+        <input type="text" class="form-control" id="inputSentence" ng-model="wordCountCtrl.inputSentence" placeholder="Enter your sentence here." required>
+    </div>
+    <button id="submitButton" type="submit" ng-click="wordCountCtrl.calculateWordCount()" class="btn btn-default">Submit</button>
+</form>
+<br>
+<div id="totalWordCount">Total word count = {{wordCountCtrl.totalWordCount}}</div>
