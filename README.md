@@ -1,7 +1,7 @@
 ### Install Dependencies
 
+```
 npm install
-
 ```
 Behind the scenes this will also call `bower install`. After that, you should find out that you have
 two new folders in your project.
@@ -15,6 +15,7 @@ makes it easier to serve the files by a web server.*
 
 ### Run the Application
 
+```
 npm start
 ```
 
