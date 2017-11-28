@@ -24,7 +24,7 @@ describe('my app', function() {
             var expectedSentence = "This is an example.";
             var expectedSubmitButton = element(by.id("submitButton"));
             var expectedTotalWordCountElement = element(by.id("totalWordCount"));
-            var expectedTotalWordCount = "Total word count = 4";
+            var expectedTotalWordCount = "Total word count = 8";
 
             expectedInputTextArea.sendKeys(expectedSentence);
 
