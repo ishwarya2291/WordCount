@@ -1,9 +1,14 @@
 <form>
     <div class="form-group">
         <label for="inputSentence">Input Sentence</label>
-        <input type="text" class="form-control" id="inputSentence" ng-model="wordCountCtrl.inputSentence" placeholder="Enter your sentence here." required>
+        <textarea class="form-control" name="content" rows="5" id="inputSentence"
+                  ng-model="wordCountController.inputSentence"
+                  placeholder="Enter your sentence here." required>
+        </textarea>
     </div>
-    <button id="submitButton" type="submit" ng-click="wordCountCtrl.calculateWordCount()" class="btn btn-default">Submit</button>
+    <button id="submitButton" type="submit" ng-click="wordCountController.calculateWordCount()" class="btn btn-default">
+        Submit
+    </button>
 </form>
 <br>
-<div id="totalWordCount">Total word count = {{wordCountCtrl.totalWordCount}}</div>
+<div id="totalWordCount">Total word count = {{wordCountController.totalWordCount}}</div>

@@ -26,7 +26,7 @@ describe('myApp.wordCount module', function() {
         it('constructor test', function() {
             //Arrange
             var expectedTotalWordCount = 0;
-            var expectedInputSentence = "This is a sentence.";
+            var expectedInputSentence = "";
 
             //Act
             createWordCountController();
@@ -42,6 +42,19 @@ describe('myApp.wordCount module', function() {
             var expectedTotalCount = 14;
             createWordCountController();
             wordCountController.inputSentence = "This is a test case to check the number of words in a sentence.";
+
+            //Act
+            wordCountController.calculateWordCount();
+
+            //Assert
+            expect(wordCountController.totalWordCount).toEqual(expectedTotalCount);
+        });
+
+        it('calculateWordCount empty input test', function() {
+            //Arrange
+            var expectedTotalCount = 0;
+            createWordCountController();
+            wordCountController.inputSentence = "";
 
             //Act
             wordCountController.calculateWordCount();
